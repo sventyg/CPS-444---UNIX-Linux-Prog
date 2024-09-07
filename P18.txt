@@ -1,0 +1,27 @@
+18)
+int main(){
+
+ const int s = 20;
+ int array[s] = { 0 }, sub = 0, dup, v;
+ cout<<"20 integers (10 and 100):\n";
+
+ for (int x = 0; x < s; ++x ){
+   dup = 0;
+    cin >> v;
+    for ( int y = 0; y < sub; ++y )
+    if ( v == array[y] )
+    {
+     dup = 1;
+     break;
+    }
+   if ( !dup )
+      array[sub++] = v;
+ }
+  cout << "\nNot duplicates:\n";
+  for (int x = 0; array[x] != 0; ++x)
+   cout<<setw(4)<<array[x];
+   cout<<endl;
+   system("pause");
+
+ return 0;
+}

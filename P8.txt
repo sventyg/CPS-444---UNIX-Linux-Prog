@@ -1,0 +1,29 @@
+8)
+double small(double, double, double);
+
+int main(){
+    
+double x, y, z;
+cout << "Three numbers ";
+cin >> x >> y >> z;
+cout << "Smallest " << small(x, y, z);
+return 0;
+}
+double small(double x, double y, double z)
+{
+double sm;
+sm = x;
+if( x > y)
+{
+if( y > z)
+sm = z;
+else
+sm = y;
+}
+else
+{
+if( x > z)
+sm = z;
+}
+return sm;
+}

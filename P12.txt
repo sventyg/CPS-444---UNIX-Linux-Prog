@@ -1,0 +1,43 @@
+12)
+int gcd(int, int); 
+
+int main() 
+{
+int x; 
+int y; 
+
+cout<<"Two integers: ";
+cin >>x>> y;
+
+cout << "GCD of "<< x << " and " << y << " is " << gcd(x,y);
+
+return 0; 
+} 
+int gcd(int x, int y)
+{
+int z; 
+
+if (x > y) 
+{
+int t = x;
+x = y;
+y = t;
+}
+
+while(true)
+{
+int z = y % x; 
+if (z == 0)
+{
+gcd = x;
+break;
+}
+
+else{
+y = x;
+x = z;
+}
+}
+cout<<"Numbers "<<x<<y;
+return gcd; 
+} 

@@ -1,0 +1,34 @@
+9)
+void perfect(int number)
+{
+    int sum=0;
+    for(int i=1;i<number;i++)
+    {
+        if(number%i==0)
+        {
+            sum = sum + i;
+        }
+       
+    }
+    if(sum==number)
+    {
+        cout<<endl<<number<<" is Perfect number with:"<<endl;
+        for(int i=1;i<number;i++)
+        {
+        if(number%i==0)
+        {
+            cout<<i<<"     ";
+        }
+       
+        }  
+    }
+}
+
+int main()
+{
+   for(int i=1;i<=1000;i++)
+   {
+       perfect(i);
+   }
+   return 0;
+}

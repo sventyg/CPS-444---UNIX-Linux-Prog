@@ -1,0 +1,27 @@
+16)
+int main (){
+    
+int salespeople[9] = {0};
+int i;
+int sales = 0;
+int com = 0;
+for(i = 0;i < 20;i++)
+{
+printf("Enter sales: ");
+scanf("%d", &sales);
+com = 200 + (.09 * sales);
+int calc = com / 100;
+calc = (calc < 10) ? calc - 2 : 8;
+salespeople[calc]++;
+}
+printf("a)$200-299:%d\n", salespeople[0]);
+printf("b)$300-399: %d\n", salespeople[1]);
+printf("c)$400-499: %d\n", salespeople[2]);
+printf("d)$500-599; %d\n", salespeople[3]);
+printf("e)$600-699: %d\n", salespeople[4]);
+printf("f)$700-799: %d\n", salespeople[5]);
+printf("g)$800-899: %d\n", salespeople[6]);
+printf("h)$900-999: %d\n", salespeople[7]);
+printf("i)$1000 and over: %d\n", salespeople[8]);
+return 0;
+}

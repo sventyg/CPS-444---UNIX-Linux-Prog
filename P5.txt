@@ -1,0 +1,8 @@
+5)
+void fillcharacter(side,char){
+for(int i = 0; i<side; i++){
+    for(int i = 0; i<side; i++){
+        printf(char);
+    }
+    printf("\n");
+}

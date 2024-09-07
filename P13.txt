@@ -1,0 +1,34 @@
+13)
+int qualityPoints(int average){
+if(average>=90&&average<=100){
+return 4;
+}
+else if(average>=80 && average<=89){
+return 3;
+}
+else if(average>=70 && average<=79){
+return 2;
+}
+else if(average>=60 && average<=69){
+return 1;
+}
+else{
+return 0;
+}
+}
+
+int main(){
+int average;
+int i;
+
+printf("Average score:");
+scanf("%d",&average);
+if (average<0 || average>100){
+printf("Out of range\n");
+}
+else{
+i=qualityPoints(average);
+printf("Quality points:%d\n",i);
+}
+return 0;
+}

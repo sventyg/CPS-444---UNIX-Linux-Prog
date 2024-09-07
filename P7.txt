@@ -1,0 +1,31 @@
+7)
+float celsius(int far){
+return (far-32)*(5.0/9);
+}
+
+float farenheit(int cel){
+return (cel*9.0/5)+32;
+}
+
+int main()
+{
+int i=0;
+printf("Celcius -> Farenheit\n");
+printf("-----------------\n");
+printf(" Celcius|Franheit\n");
+
+for(i=0;i<=100;i++)
+{
+printf(" %d\t| %.1f\t\n",i,farenheit(i));
+printf("-----------------\n");
+}
+printf("Farenheit -> Celcius\n");
+printf("-----------------\n");
+printf("Farenheit|Celcius\n");
+
+for(i=32;i<=212;i++)
+{
+printf(" %d\t| %.1f\t\n",i,celsius(i));
+printf("-----------------\n");
+}
+}

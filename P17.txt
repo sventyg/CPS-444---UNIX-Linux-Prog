@@ -1,0 +1,42 @@
+17)
+a)
+int main(void) {
+int x,count[10];
+for(x=0;x<10;x++)
+count[x] = 0;
+for(x=0;x<10;x++)
+printf("Counts[%d]=%d\t",x+1,count[x]);
+return 0;
+}
+b)
+int main(void) {
+int x,b[15];
+
+for(x=0;x<15;x++)
+b[x] = 0;
+for(x=0;x<15;x++)
+b[x] = b[x]+1;
+for(x=0;x<15;x++)
+printf("Bonus[%d]=%d\t",x+1,b[x]);
+return 0;
+}
+c)
+int main(void) {
+int x;
+float monthlyTemperatures[12];
+printf("Monthly Temperatures: ");
+for(x=0;x<12;x++)
+scanf("%f",&monthlyTemperatures[x]);
+for(x=0;x<12;x++)
+printf("monthlyTemperatures[%d]=%.2f\t",x+1,monthlyTemperatures[x]);
+return 0;
+}
+d)
+int main(void) {
+int x,bestScores[5];
+for(x=0;x<5;x++)
+scanf("%d",&bestScores[x]);
+for(x=0;x<5;x++)
+printf("bestScores[%d]=%d\t",x+1,bestScores[x]);
+return 0;
+}

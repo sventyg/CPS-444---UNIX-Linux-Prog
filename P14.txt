@@ -1,0 +1,33 @@
+14)
+void fibonacci(int num){
+
+printf("n\tFibonacci\n");
+int unsigned_int, t0 = 0, t1 = 1, unsigned_long = 0;
+for (unsigned_int = 1; unsigned_int <= num; ++unsigned_int)
+{
+if(unsigned_int == 1)
+{
+printf("%d\t%d\n", unsigned_int,t0);
+continue;
+}
+if(unsigned_int == 2)
+{
+printf("%d\t%d\n", unsigned_int,t1);
+continue;
+}
+unsigned_long = t0 + t1;
+t0 = t1;
+t1 = unsigned_long;
+printf("%d\t%d\n",unsigned_int, unsigned_long);
+}
+}
+
+int main()
+{
+int i, num, t0 = 0, t1 = 1, next = 0;
+
+printf("Number of terms: ");
+scanf("%d", &num);
+fibonacci(num);
+return 0;
+}

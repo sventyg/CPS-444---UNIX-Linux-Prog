@@ -1,0 +1,6 @@
+1)
+    double hypotenuse(double a, double b){
+double c;
+c=sqrt((a*a)+(b*b)) ;
+return c;
+}

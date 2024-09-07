@@ -1,0 +1,23 @@
+11)
+int Reversing(int i){
+int rev = 0, r;
+
+while(i != 0){
+
+r = i%10;
+rev = rev*10 + r;
+i/=10;
+}
+return rev;
+}
+
+int main(){
+
+int i;
+cout<<"Enter integer (1-9999): ";
+cin>>i;
+cout<<"Number with digits reversed : "<<Reversing(i);
+
+return 0;
+
+}
